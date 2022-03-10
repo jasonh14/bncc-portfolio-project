@@ -165,12 +165,14 @@ body {
 }
 
 .list-tech {
-  display: flex;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 160px);
+  column-gap: 20px;
+  row-gap: 20px;
   justify-content: center;
   align-items: center;
-}
-
-.list-tech {
+  padding: 0 10px;
   font-size: 5rem;
 }
 
@@ -180,7 +182,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 20px 40px;
   border-radius: 16px;
-  margin: 20px;
+  /* margin: 20px; */
 
   display: flex;
   flex-direction: column;
@@ -192,3 +194,29 @@ body {
   font-weight: 500;
 }
 /* End Skills Section */
+
+/* Footer section*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer p {
+  font-size: 0.8rem;
+}
+.social-media {
+  display: flex;
+  align-items: center;
+}
+.social-media a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 1rem;
+}
+
+.social-media a:not(:last-child) {
+  padding-right: 10px;
+}
