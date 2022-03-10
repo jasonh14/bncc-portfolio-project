@@ -275,3 +275,34 @@ body {
 .btn {
   cursor: pointer;
 }
+/* End Portfolio Page */
+
+/* Eventide Page */
+.eventide-page {
+  padding: 20px;
+}
+
+.eventide-img img {
+  border-radius: 25px;
+}
+
+.eventide-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #252525;
+}
+
+.eventide-page p {
+  font-size: 0.8rem;
+  color: #333333;
+}
+
+.detail-project {
+  margin-top: 10px;
+}
+
+.detail-project a {
+  text-decoration: none;
+  color: #060458;
+}
