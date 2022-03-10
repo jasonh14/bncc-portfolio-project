@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgb(54, 208, 220);
+  background: linear-gradient(
+      286deg,
+      rgba(54, 208, 220, 1) 0%,
+      rgba(90, 136, 228, 1) 100%
+    ),
+    fixed;
+}
+
+.main-card {
+  margin: 20px auto 20px auto;
+
+  width: 80%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #3d3d3d;
+  font-weight: 400;
+}
+
+.left-nav p {
+  color: #3d3d3d;
+  font-weight: 600;
+}
+
+.right-nav a:not(:last-child) {
+  padding-right: 40px;
+}
+/* End Navbar */
+
+/* About section */
+.about-section {
+  display: flex;
+  padding: 60px 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-photo-container {
+  width: 50%;
+}
+
+.description {
+  width: 50%;
+  padding-right: 40px;
+}
+
+.titled {
+  font-size: 1rem;
+  color: #333333;
+}
+
+.description h3 {
+  font-size: 2rem;
+  color: #333333;
+}
+
+.description-text {
+  font-size: 0.78rem;
+}
+
+.profile-photo img {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  backdrop-filter: blur(5px);
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+  max-width: 80%;
+  /* margin: auto; */
+  float: right;
+  padding-right: 40px;
+}
+
+.btn {
+  padding: 10px 15px;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: 600;
+  color: #333333;
+}
+
+.portfolio-btn {
+  margin-right: 10px;
+}
+
+/* End About Section */
+
+/* Education Section */
+
+.education-container h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.education-table {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0px 20px;
+}
+
+.grid-item {
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.education-title {
+  font-weight: 700;
+}
+
+.desc-education {
+  font-size: 0.8rem;
+}
+
+.grid-item li {
+  font-size: 0.8rem;
+}
+/* End Education Section */
+
+/* Skills Section */
+.skills-container h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+}
+/* End Skills Section */
