@@ -158,8 +158,37 @@ body {
 
 /* Skills Section */
 .skills-container h1 {
+  margin-top: 30px;
   text-align: center;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
   font-size: 2rem;
+}
+
+.list-tech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-tech {
+  font-size: 5rem;
+}
+
+.icon-stack {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px 40px;
+  border-radius: 16px;
+  margin: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-stack p {
+  font-size: 1rem;
+  font-weight: 500;
 }
 /* End Skills Section */
