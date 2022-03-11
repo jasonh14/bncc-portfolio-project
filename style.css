@@ -170,7 +170,7 @@ body {
 .list-tech {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 160px);
+  grid-template-columns: repeat(auto-fill, 180px);
   column-gap: 20px;
   row-gap: 20px;
   justify-content: center;
@@ -381,6 +381,10 @@ textarea:focus {
   display: none;
 }
 
+.btn-container {
+  display: flex;
+}
+
 /* Tab Media Query */
 @media only screen and (max-width: 768px) {
   .about-section {
@@ -443,5 +447,26 @@ textarea:focus {
 
   .form-container label {
     font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .profile-photo-container {
+    width: 100%;
+  }
+
+  .description h3 {
+    font-size: 1.5rem;
+  }
+
+  .titled {
+    font-size: 0.8rem;
+  }
+
+  .description-text {
+    font-size: 0.8rem;
+  }
+  .btn {
+    font-size: 0.7rem;
   }
 }

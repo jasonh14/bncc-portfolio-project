@@ -13,6 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <div class="main-card">
@@ -43,13 +44,17 @@
 
       <!-- About Section -->
       <div class="about-section">
-        <div class="profile-photo-container">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          class="profile-photo-container"
+        >
           <div class="profile-photo">
             <img src="./profile.png" alt="" />
           </div>
         </div>
 
-        <div class="description">
+        <div data-aos="fade-left" data-aos-duration="2000" class="description">
           <p class="titled">Undergraduate Student | Front End Developer</p>
           <h3>Jason Hartanto</h3>
           <p class="description-text">
@@ -59,16 +64,23 @@
             adaptable to all challenging situations. I am able to work well both
             in a team environment as well as using own initiative.
           </p>
-          <button class="portfolio-btn btn">View Portfolio</button>
-          <button class="btn">Contact Me</button>
+
+          <div class="btn-container">
+            <button class="portfolio-btn btn">View Portfolio</button>
+            <button class="btn">Contact Me</button>
+          </div>
         </div>
       </div>
       <!-- End About Section -->
 
       <!-- Education Section -->
       <div class="education-container">
-        <h1>Education</h1>
-        <div class="education-table">
+        <h1 data-aos="fade-left" data-aos-duration="2000">Education</h1>
+        <div
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          class="education-table"
+        >
           <div class="grid-item d-flex"><p>2021</p></div>
           <div class="grid-item">
             <p class="education-title">BINUS University</p>
@@ -101,7 +113,7 @@
       <!-- End Education Section -->
 
       <!-- Skills Section -->
-      <div class="skills-container">
+      <div data-aos="fade-up" data-aos-duration="2000" class="skills-container">
         <h1>Tech Stack I Use</h1>
         <div class="list-tech">
           <div class="icon-stack">
@@ -150,5 +162,9 @@
     </div>
 
     <script src="btn.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
