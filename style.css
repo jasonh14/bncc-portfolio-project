@@ -2,7 +2,7 @@
 
 * {
   margin: 0;
-
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -451,20 +451,23 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 426px) {
+  .about-section {
+    padding: 10px 40px;
+  }
   .profile-photo-container {
     width: 100%;
   }
 
   .description h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .titled {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 
   .description-text {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .btn {
     font-size: 0.7rem;
