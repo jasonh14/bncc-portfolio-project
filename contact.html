@@ -29,6 +29,42 @@
       </div>
       <!-- End Navbar -->
 
+      <!-- Form Section -->
+      <form class="form-container" action="">
+        <h1>Contact Us</h1>
+        <label for="">Name</label>
+        <input id="name-form" required placeholder="Your Name" type="text" />
+
+        <label for="">Email</label>
+        <input id="email-form" required placeholder="Your Email" type="email" />
+
+        <label for="">Phone Number</label>
+        <input
+          id="phone-form"
+          type="tel"
+          pattern="08[0-9]{1,12}"
+          required
+          placeholder="08xxxxxxxxxxxx"
+          maxlength="14"
+          title="Input should start with 08 and have maximum 14 digits"
+        />
+
+        <label for="">Comment</label>
+        <textarea
+          id="comment-form"
+          class="text-area"
+          name=""
+          id=""
+          cols="100"
+          rows="10"
+          placeholder="Your Comment"
+        ></textarea>
+
+        <input class="submit-btn" type="submit" value="Submit" />
+      </form>
+
+      <!-- End Form -->
+
       <!-- Footer Section -->
       <div class="footer">
         <p>Jason Hartanto &copy; 2022</p>
