@@ -13,7 +13,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="./script.js"></script>
   </head>
   <body>
     <div class="main-card">
@@ -27,15 +26,28 @@
           <a href="./portfolio.html">Portfolio</a>
           <a href="./contact.html">Contact</a>
         </div>
+        <div id="mobile-icon" class="hamburger-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
+
       <!-- End Navbar -->
 
+      <!-- Mobile Navbar -->
+      <div id="navbar-mobile" class="mobile-navbar d-none">
+        <a href="./index.html">Home</a>
+        <a href="./portfolio.html">Portfolio</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+      <!-- End Mobile Nav -->
+
       <!-- Form Section -->
-      <form onsubmit="submitForm(event)" class="form-container" action="">
+      <form id="form" class="form-container" action="">
         <h1>Contact Us</h1>
         <label for="">Name</label>
         <input
           class="input-field"
+          id="name-box"
           required
           placeholder="Your Name"
           type="text"
@@ -44,7 +56,7 @@
         <label for="">Email</label>
         <input
           class="input-field"
-          id="email-form"
+          id="email-box"
           required
           placeholder="Your Email"
           type="email"
@@ -53,6 +65,7 @@
         <label for="">Phone Number</label>
         <input
           class="input-field"
+          id="phone-box"
           type="tel"
           pattern="08[0-9]{1,12}"
           required
@@ -65,13 +78,18 @@
         <textarea
           class="text-area input-field"
           name=""
-          id=""
+          id="comment-box"
           cols="100"
           rows="10"
           placeholder="Your Comment"
         ></textarea>
 
-        <input class="submit-btn" type="submit" value="Submit" />
+        <input
+          id="btn-submit"
+          class="submit-btn"
+          type="submit"
+          value="Submit"
+        />
       </form>
 
       <!-- End Form -->
@@ -96,5 +114,9 @@
       </div>
       <!-- End Footer -->
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./script.js"></script>
+    <script src="btn.js"></script>
   </body>
 </html>

@@ -372,3 +372,76 @@ input:focus,
 textarea:focus {
   outline: none;
 }
+
+.d-none {
+  display: none;
+}
+
+.hamburger-icon {
+  display: none;
+}
+
+/* Tab Media Query */
+@media only screen and (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .profile-photo-container {
+    width: 80%;
+  }
+
+  .profile-photo {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .profile-photo img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .description {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 636px) {
+  .mobile-navbar {
+    padding: 5px 40px;
+  }
+  .mobile-navbar a {
+    padding-bottom: 10px;
+    display: block;
+    text-decoration: none;
+    color: #333333;
+    font-size: 0.9rem;
+  }
+
+  .right-nav {
+    display: none;
+  }
+
+  .hamburger-icon {
+    font-size: 1.2rem;
+  }
+
+  .hamburger-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .form-container h1 {
+    font-size: 1.3rem;
+  }
+
+  .form-container {
+    margin: 20px;
+  }
+
+  .form-container label {
+    font-size: 0.9rem;
+  }
+}
