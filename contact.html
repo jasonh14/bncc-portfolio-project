@@ -13,6 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="./script.js"></script>
   </head>
   <body>
     <div class="main-card">
@@ -30,17 +31,28 @@
       <!-- End Navbar -->
 
       <!-- Form Section -->
-      <form class="form-container" action="">
+      <form onsubmit="submitForm(event)" class="form-container" action="">
         <h1>Contact Us</h1>
         <label for="">Name</label>
-        <input id="name-form" required placeholder="Your Name" type="text" />
+        <input
+          class="input-field"
+          required
+          placeholder="Your Name"
+          type="text"
+        />
 
         <label for="">Email</label>
-        <input id="email-form" required placeholder="Your Email" type="email" />
+        <input
+          class="input-field"
+          id="email-form"
+          required
+          placeholder="Your Email"
+          type="email"
+        />
 
         <label for="">Phone Number</label>
         <input
-          id="phone-form"
+          class="input-field"
           type="tel"
           pattern="08[0-9]{1,12}"
           required
@@ -51,8 +63,7 @@
 
         <label for="">Comment</label>
         <textarea
-          id="comment-form"
-          class="text-area"
+          class="text-area input-field"
           name=""
           id=""
           cols="100"
